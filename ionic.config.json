@@ -1,0 +1,7 @@
+{
+  "name": "logroAD",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

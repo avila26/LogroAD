@@ -8,8 +8,16 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'saludo',
     pathMatch: 'full'
+  },
+  {
+    path: 'saludo',
+    loadChildren: () => import('./vistas/saludo/saludo.module').then( m => m.SaludoPageModule)
+  },
+  {
+    path: 'persona',
+    loadChildren: () => import('./vistas/persona/persona.module').then( m => m.PersonaPageModule)
   },
 ];
 
